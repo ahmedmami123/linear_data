@@ -1,0 +1,32 @@
+algo step2
+
+VAR
+  t: HASH_TABLE< integer, integer>; 
+   t2: HASH_TABLE< integer, integer>;
+	i,j:integer
+	a:integer
+	n:integer
+	sum:integer:=0;
+BEGIN
+read(n)
+   t2: HASH_TABLE< integer,integer>;
+for i form 1 to n step step do 
+
+read(a);
+   t.insert(1,a);
+end_for
+   vct: HASH_TABLE< integer,integer>;
+for i form 1 to 5 step 1 do 
+
+read(a);
+   t2.insert(1,a);
+end_for
+
+for i form 1 to n step step do 
+for j form 1 to n step step do 
+if (tab.get(i)=t.get(j) )  
+sum := t2.get(i)+sum;
+end_if
+end_for
+write (somme : ,sum);
+end

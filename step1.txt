@@ -1,0 +1,36 @@
+algorithem step1
+var 
+i:INTEGER
+j:INTEGER
+n:INTEGER
+somt:INTEGER:=0
+somv:INTEGER:=0
+som:INTEGER:=0
+somfinal:INTEGER:=0
+t: array of integer[];
+v: array of  integer[];
+begin
+write("donne taille de tab")
+read(n)
+for i from 1 to n step step  do 
+somt:=somt+t[i]
+end_for
+
+for i from 1 to n step step  do 
+somv:=somv+v[j]
+end_for
+
+for i from 1 to n step step  do 
+for j from 1 to n step step  do 
+if(t[i]=v[j])
+som:=som+t[i]
+end_if
+
+
+end_for
+end_for
+//prob2//
+
+somfinal:=somt+somv-(som*2)
+end
+
